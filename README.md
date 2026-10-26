@@ -12,6 +12,8 @@ AIGC:
 🏫 Moodle Course Watch
 ---
 
+**English** · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
+
 ![Moodle](https://img.shields.io/badge/Moodle-4.x-e6602c)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab)
 ![License](https://img.shields.io/badge/License-MIT-blue)
