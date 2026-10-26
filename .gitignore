@@ -1,0 +1,19 @@
+# user-specific profile — contains host, course ids and Web Service token
+site-profile.md
+
+# credentials and tokens
+*.token
+token.txt
+.env
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
