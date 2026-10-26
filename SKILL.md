@@ -1,6 +1,6 @@
 ---
 name: moodle-course-watch
-description: Watch a Moodle course end to end on any school's site — detect newly published Assignment/Tutorial activities, mirror missing week folders into a local course directory, report which activities are still unsubmitted, and give a professional walkthrough of downloaded lecture notes and assignment briefs with key points graded automatically (spoken to the user in chat, no report file), plus an optional exam-notes deliverable. Use when the user says 看下这门课这周有没有新东西 / 补下载 Week N / 我哪些作业没交 / 这份讲义讲了什么 / 帮我做重点笔记, or asks for a weekly course check, Moodle 巡检, 课件补下载, 作业提交状态, 讲义速览, 复习重点整理.
+description: Watch a Moodle course end to end on any school's site — detect newly published Assignment/Tutorial activities, mirror missing week folders into a local course directory, report which activities are still unsubmitted, and give a professional walkthrough of downloaded lecture notes and assignment briefs with key points graded automatically (spoken to the user in chat, no report file), plus an optional exam-notes deliverable. Use when the user asks for a weekly course check, or says any trigger phrase in any language — EN: anything new in this course this week / download Week N / what have I not submitted / what does this handout cover / make me revision notes; 简体: 看下这门课这周有没有新东西 / 补下载 Week N / 我哪些作业没交 / 这份讲义讲了什么 / 帮我做重点笔记 / 课件补下载 / 讲义速览 / 复习重点整理; 繁體: 看下這門課這週有沒有新東西 / 補下載 Week N / 我哪些作業沒交 / 這份講義講了什麼 / 幫我做重點筆記 / 課件補下載 / 講義速覽 / 複習重點整理.
 ---
 
 # Moodle Course Watch
@@ -12,6 +12,21 @@ edited or uploaded to Moodle.
 
 It is deliberately **not turnkey**: every school's Moodle differs, so the profile below has to be filled in by the
 user before the first run. Treat that step as part of the skill, not as setup friction to skip.
+
+## Trigger phrases, by language
+
+The same five jobs, phrased in whichever language the user writes in. Match on intent, not on exact strings.
+
+| Job | English | 简体 | 繁體 |
+|---|---|---|---|
+| New activities | anything new this week / any new coursework posted | 看下这门课这周有没有新东西 / 有没有新发布的作业 | 看下這門課這週有沒有新東西 / 有沒有新發布的作業 |
+| Missing-week download | download Week 6 / grab the Week 7 files | 补下载 Week 6 / 把第 7 周的文件下下来 | 補下載 Week 6 / 把第 7 週的檔案下載下來 |
+| Submission status | what haven't I submitted / which are still open | 我哪些作业没交 / 还有哪些没交 | 我哪些作業沒交 / 還有哪些沒交 |
+| File walkthrough | what does this handout cover / walk me through these slides | 这份讲义讲了什么 / 这几份课件讲了什么 | 這份講義講了什麼 / 這幾份課件講了什麼 |
+| Exam notes | make me revision notes / build a key-points sheet | 帮我做重点笔记 / 整理复习重点 | 幫我做重點筆記 / 整理複習重點 |
+
+Reply in the language the user used. Keep file names, activity titles and Moodle terms in their original form
+when quoting them.
 
 ## Setup gate — do not skip
 

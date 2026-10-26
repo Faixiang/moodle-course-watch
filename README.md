@@ -1,3 +1,14 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: c6eb62ba6ec5a28db2139adf23a2fe4b_a208be9cd16811f196c5525400248c00
+    ReservedCode1: fPnik/37NDShDnoT06k7x0nH+xPr+nydZpoUhV7RgSeHcUoX3d1EovQjN+Egx+ZAiaB8AV2sYfTvI8QhaNaxVi4FBZo1IHMVCO0A/RzaBP/KLoqsPU6KlcIysoSD+32fyzEV725rxdEAjHtL6lj99iHEOwgedr5/UkeoiI17n4Kcdt6ueITZF4dJ/nQ=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: c6eb62ba6ec5a28db2139adf23a2fe4b_a208be9cd16811f196c5525400248c00
+    ReservedCode2: fPnik/37NDShDnoT06k7x0nH+xPr+nydZpoUhV7RgSeHcUoX3d1EovQjN+Egx+ZAiaB8AV2sYfTvI8QhaNaxVi4FBZo1IHMVCO0A/RzaBP/KLoqsPU6KlcIysoSD+32fyzEV725rxdEAjHtL6lj99iHEOwgedr5/UkeoiI17n4Kcdt6ueITZF4dJ/nQ=
+---
+
 🏫 Moodle Course Watch
 ---
 
@@ -16,13 +27,47 @@ Nothing is ever submitted, edited or uploaded to Moodle. Every call is a `GET` a
 
 ## What it does
 
-| Job | Trigger | Output |
-|---|---|---|
-| **1. New activities** | 看下这门课这周有没有新东西 | diffs `cmid` against a local baseline; reports name + section of anything new |
-| **2. Missing-week download** | 补下载 Week N | creates the week folder, downloads every file with a tokenised link, verifies byte size |
-| **3. Submission status** | 我哪些作业没交 | `submitted` / `draft` / `new` per activity, with graded state and last-modified time |
-| **4. File walkthrough** | 这份讲义讲了什么 | professional read of each file: positioning, content, **graded key points (必记 / 理解 / 了解)**, links to neighbouring weeks, and anything unreadable — delivered in chat, no report file |
-| **5. Exam notes** | 帮我做重点笔记 | optional Markdown deliverable: definition table, formula table with conditions of validity, worked-example steps, common mistakes, five-minute recall list |
+| Job | Output |
+|---|---|
+| **1. New activities** | diffs `cmid` against a local baseline; reports name + section of anything new |
+| **2. Missing-week download** | creates the week folder, downloads every file with a tokenised link, verifies byte size |
+| **3. Submission status** | `submitted` / `draft` / `new` per activity, with graded state and last-modified time |
+| **4. File walkthrough** | professional read of each file: positioning, content, **graded key points (must-know / understand / awareness)**, links to neighbouring weeks, and anything unreadable — delivered in chat, no report file |
+| **5. Exam notes** | optional Markdown deliverable: definition table, formula table with conditions of validity, worked-example steps, common mistakes, five-minute recall list |
+
+## Triggers
+
+Say it in whichever language you think in. Each line maps to the same job.
+
+**English**
+
+| Job | Say |
+|---|---|
+| New activities | *anything new in this course this week?* · *any new coursework posted?* |
+| Missing-week download | *download Week 6* · *grab the files for Week 7* |
+| Submission status | *what haven't I submitted yet?* · *which assignments are still open?* |
+| File walkthrough | *what does this handout cover?* · *walk me through these slides* |
+| Exam notes | *make me revision notes* · *build a key-points sheet* |
+
+**简体中文**
+
+| 事项 | 说 |
+|---|---|
+| 新作业 | 看下这门课这周有没有新东西 · 有没有新发布的作业 |
+| 按周下载 | 补下载 Week 6 · 把第 7 周的文件下下来 |
+| 提交状态 | 我哪些作业没交 · 还有哪些作业没交 |
+| 内容讲述 | 这份讲义讲了什么 · 这几份课件讲了什么 |
+| 重点笔记 | 帮我做重点笔记 · 整理复习重点 |
+
+**繁體中文**
+
+| 事項 | 說 |
+|---|---|
+| 新作業 | 看下這門課這週有沒有新東西 · 有沒有新發布的作業 |
+| 按週下載 | 補下載 Week 6 · 把第 7 週的檔案下載下來 |
+| 提交狀態 | 我哪些作業沒交 · 還有哪些作業沒交 |
+| 內容講述 | 這份講義講了什麼 · 這幾份課件講了什麼 |
+| 重點筆記 | 幫我做重點筆記 · 整理複習重點 |
 
 ## Why it is not turnkey
 
@@ -79,8 +124,7 @@ python scripts/submission_status.py --courses 28048,28196 --mcp-dir <dir>
 python scripts/submission_status.py --courses 28048 --pattern "assignment|tutorial" --json
 ```
 
-Then just talk to the agent: *看下 CIS221 这周有没有新东西* · *补下载 Week 7* · *我哪些作业没交* ·
-*这份讲义讲了什么* · *帮我做重点笔记*.
+Then just talk to the agent, in English, 简体 or 繁體 — see [Triggers](#triggers) for the phrasing of each job.
 
 ## Download links — the one trap worth naming
 
@@ -111,3 +155,4 @@ Without a token the endpoint answers with an error document whose HTTP status ma
 ## License
 
 MIT — see [LICENSE](LICENSE).
+*（内容由AI生成，仅供参考）*
