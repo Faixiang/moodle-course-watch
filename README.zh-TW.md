@@ -15,7 +15,7 @@ AIGC:
 [English](README.md) · [简体中文](README.zh-CN.md) · **繁體中文**
 
 > **配套於 [moodle-mcp](https://github.com/Faixiang/moodle-mcp)** —— 該專案提供本 skill 所呼叫的 Moodle Web
-> Service 工具，本倉庫提供其上的工作流程。skill 同時隨主倉分發（`skill/moodle-course-watch/`），兩條路徑擇一即可。
+> Service 工具，本倉庫提供其上的工作流程。主倉同時以 git submodule 形式掛載本倉庫（`skill/moodle-course-watch/`，複製主倉需加 `--recurse-submodules`），兩條路徑擇一即可。
 
 ![Moodle](https://img.shields.io/badge/Moodle-4.x-e6602c)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab)
