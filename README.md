@@ -14,6 +14,10 @@ AIGC:
 
 **English** · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
 
+> **Companion to [moodle-mcp](https://github.com/Faixiang/moodle-mcp)** — that project supplies the Moodle Web
+> Service tools this skill calls; this repository supplies the workflow. The skill is also vendored into the server
+> repo at `skill/moodle-course-watch/`, so either one can be your entry point.
+
 ![Moodle](https://img.shields.io/badge/Moodle-4.x-e6602c)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab)
 ![License](https://img.shields.io/badge/License-MIT-blue)

@@ -1,7 +1,21 @@
+---
+AIGC:
+    Label: "1"
+    ContentProducer: 001191440300708461136T1XGW3
+    ProduceID: c6eb62ba6ec5a28db2139adf23a2fe4b_ad8c88a5d16911f18460525400393706
+    ReservedCode1: jNG/ge4NBd4HkuR9fILWWvoy6J5lVjUdTvuY0qZgWJT2CzTRK1D/sDKdQv91/Y74rdxYk9tbLzT/2/mxq7/IqYcrxcoao4lSLaYjOb2FlNCwmNnkpH+Vh5wMg7OuUHK1CWLqq1Jut9dv3tkV6bN90EzTghLmxkUPb5qCPPL9MBaV1wGVMskH2telaow=
+    ContentPropagator: 001191440300708461136T1XGW3
+    PropagateID: c6eb62ba6ec5a28db2139adf23a2fe4b_ad8c88a5d16911f18460525400393706
+    ReservedCode2: jNG/ge4NBd4HkuR9fILWWvoy6J5lVjUdTvuY0qZgWJT2CzTRK1D/sDKdQv91/Y74rdxYk9tbLzT/2/mxq7/IqYcrxcoao4lSLaYjOb2FlNCwmNnkpH+Vh5wMg7OuUHK1CWLqq1Jut9dv3tkV6bN90EzTghLmxkUPb5qCPPL9MBaV1wGVMskH2telaow=
+---
+
 🏫 Moodle Course Watch
 ---
 
 [English](README.md) · **简体中文** · [繁體中文](README.zh-TW.md)
+
+> **配套于 [moodle-mcp](https://github.com/Faixiang/moodle-mcp)** —— 该项目提供本 skill 所调用的 Moodle Web
+> Service 工具，本仓库提供其上的工作流。skill 同时随主仓分发（`skill/moodle-course-watch/`），两条路径任选其一即可。
 
 ![Moodle](https://img.shields.io/badge/Moodle-4.x-e6602c)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-3776ab)
@@ -138,3 +152,4 @@ python scripts/submission_status.py --courses 28048 --pattern "assignment|tutori
 ## 许可
 
 MIT——见 [LICENSE](LICENSE)。
+*（内容由AI生成，仅供参考）*
